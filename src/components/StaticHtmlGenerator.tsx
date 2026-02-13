@@ -376,7 +376,7 @@ export const StaticHtmlGenerator: React.FC = () => {
           </div>` : ''}
           
           <div class="course-cta">
-            <a href="${course.url || '#'}" class="btn btn-primary btn-large" target="_blank" rel="noopener">Записаться на курс →</a>
+            <a href="${course.url || '#'}" class="btn btn-primary btn-large" target="_blank" rel="noopener">Перейти на сайт →</a>
           </div>
         </div>
       </article>`).join('\n      ')}
