@@ -376,14 +376,13 @@ const AdminContent = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
             <div className="flex items-center gap-4">
               <a 
-                href="/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary hover:text-primary/80 hover:bg-primary/5 rounded-lg transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                На сайт
-              </a>
+                 href="/" 
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary/90 rounded-md transition-colors"
+               >
+                 Перейти на сайт →
+               </a>
               <div>
                 <h1 className="text-2xl font-bold text-foreground">Админ-панель</h1>
                 <p className="text-sm text-muted-foreground">Импорт JSON → Редактирование → Генерация HTML</p>
