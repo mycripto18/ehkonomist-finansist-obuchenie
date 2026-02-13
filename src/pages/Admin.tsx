@@ -372,39 +372,39 @@ const AdminContent = () => {
     <div className="min-h-screen bg-muted/30 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="mb-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-            <div className="flex items-center gap-4">
-              <a 
-                 href="/" 
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary/90 rounded-md transition-colors"
-               >
-                 Перейти на сайт →
-               </a>
-              <div>
-                <h1 className="text-2xl font-bold text-foreground">Админ-панель</h1>
-                <p className="text-sm text-muted-foreground">Импорт JSON → Редактирование → Генерация HTML</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              {isModified && !justSaved && (
-                <Badge variant="secondary" className="bg-amber-100 text-amber-800">Есть изменения</Badge>
-              )}
-              {justSaved && (
-                <Badge variant="secondary" className="bg-green-100 text-green-800">Сохранено ✓</Badge>
-              )}
-              <Button variant="outline" size="sm" onClick={handleReset}>
-                <RotateCcw className="w-4 h-4 mr-2" />
-                Сброс
-              </Button>
-              <Button size="sm" variant={isModified ? "default" : "outline"} onClick={handleSave}>
-                <Save className="w-4 h-4 mr-2" />
-                Сохранить
-              </Button>
-            </div>
-          </div>
+         <div className="mb-6">
+           <div className="flex flex-col gap-4 mb-4">
+             <a 
+               href="/" 
+               target="_blank"
+               rel="noopener noreferrer"
+               className="w-full flex items-center justify-center py-4 text-lg font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg transition-colors"
+             >
+               Перейти на сайт →
+             </a>
+             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+               <div>
+                 <h1 className="text-2xl font-bold text-foreground">Админ-панель</h1>
+                 <p className="text-sm text-muted-foreground">Импорт JSON → Редактирование → Генерация HTML</p>
+               </div>
+               <div className="flex items-center gap-2 flex-wrap">
+                 {isModified && !justSaved && (
+                   <Badge variant="secondary" className="bg-amber-100 text-amber-800">Есть изменения</Badge>
+                 )}
+                 {justSaved && (
+                   <Badge variant="secondary" className="bg-green-100 text-green-800">Сохранено ✓</Badge>
+                 )}
+                 <Button variant="outline" size="sm" onClick={handleReset}>
+                   <RotateCcw className="w-4 h-4 mr-2" />
+                   Сброс
+                 </Button>
+                 <Button size="sm" variant={isModified ? "default" : "outline"} onClick={handleSave}>
+                   <Save className="w-4 h-4 mr-2" />
+                   Сохранить
+                 </Button>
+               </div>
+             </div>
+           </div>
 
           {/* Drag & Drop Zone */}
           <Card 
